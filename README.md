@@ -27,8 +27,8 @@ again to pause it/unpause it.
 
 include the following on your page head:
 ```
-  <link rel="stylesheet" type="text/css" href="/web/css/gol.css"/>
-  <script type="text/javascript" src="/web/js/gol.js"></script>
+  <link rel="stylesheet" type="text/css" href="gol.css"/>
+  <script type="text/javascript" src="gol.js"></script>
 ```
 
 in page body include the following:
