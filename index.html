@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Game Of Life - Use [Space] key to initiate the game</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8;"/>
+        <link rel="stylesheet" type="text/css" href="/web/css/gol.css"/>
+        <script type="text/javascript" src="/web/js/gol.js"></script>
+    </head>
+    <body>
+        <div id="container" class="container"></div>
+        <div class="aboutDialog">
+            <div class="dialogHeader">Done by Unisergius</div>
+        </div>
+        <script>
+            (function() {
+                let rows = 180;
+                let cols = 320;
+                let interval = 250; //ms
+                let gol = new Gol("container",rows,cols,interval);
+                gol.initialize();
+                
+            })();
+        </script>
+    </body>
+</html>
