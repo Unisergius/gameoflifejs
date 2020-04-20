@@ -26,13 +26,22 @@ Use the space bar to initiate the game then use the spacebar
 again to pause it/unpause it. 
 
 include the following on your page head:
-
+```
   <link rel="stylesheet" type="text/css" href="/web/css/gol.css"/>
   <script type="text/javascript" src="/web/js/gol.js"></script>
+```
+
+in page body include the following:
+```
+  <div id="someId"></div>
+```
   
 then initiate the object as following:
-  let rows = 180;
-  let cols = 320;
-  let interval = 250; //ms
-  let gol = new Gol("container",rows,cols,interval);
+```
+  let rows = 90; // number of rows your map will have
+  let cols = 160; // number of columns your map will have
+  let interval = 500; //interval in miliseconds to refresh your map
+  let divId = "container"; //the id of the div element to contain your map. It must be empty
+  let gol = new Gol(divId,rows,cols,interval);
   gol.initialize();
+```
